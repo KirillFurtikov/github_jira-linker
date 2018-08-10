@@ -9,10 +9,10 @@
 #### **Внешний вид:**
 ![example](example.png)
 
-####**Настройка**
+#### **Настройка**
 - В **manifest.json** заполнить рашрешение в ключе **permissions** (указать свой сайт, где хостится Jira)
     - Например: `https://jira.site.com/*` (вместе с *)
-- В **lib/linkerlinker.js** заполнить переменные:
+- В **lib/linker.js** заполнить переменные:
     - *jira_link_pattern* - Паттерн ссылок для парсинга коммитов
         - Например: `jira_link_pattern = "jira.site.com";`
     - *jira_api_url* - URL Jira API
