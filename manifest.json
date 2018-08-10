@@ -1,0 +1,22 @@
+{
+   "name": "GitHub x Jira linker",
+   "author": "Furtikov Kirill",
+   "description": "Вывод списка задач на странице сравнения веток проекта в репозитории Github",
+   "version": "0.5",
+   "manifest_version": 2,
+   "content_scripts": [
+      {
+         "matches": ["https://github.com/*"],
+	     "js": ["lib/linker.js"]
+      }
+   ],
+  "permissions": [
+                    "webNavigation",
+                    "activeTab",
+                    "https://jira.site.com/*" // Страница Jira для Кросс-доменных запросов к API Jira
+                  ],                           // Например: "https://jira.site.com/*"
+
+  "browser_action": {
+  "default_title": "GitHub x Jira linker"
+	}
+}
