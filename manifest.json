@@ -2,7 +2,7 @@
    "name": "GitHub x Jira linker",
    "author": "Furtikov Kirill",
    "description": "Вывод списка задач на странице сравнения веток проекта в репозитории Github",
-   "version": "0.5",
+   "version": "0.7",
    "manifest_version": 2,
    "content_scripts": [
       {
